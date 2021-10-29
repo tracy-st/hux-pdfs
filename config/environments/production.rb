@@ -1,0 +1,1 @@
+config.middleware.insert 0, Rack::WWWhisper
