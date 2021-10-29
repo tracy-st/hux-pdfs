@@ -29,6 +29,34 @@ description: "CollectionBuilder-GH is a template for creating small digital coll
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: CollectionBuilder
 
+
+# ---------------------------------------------------------------
+# BUILD SETTINGS
+# ---------------------------------------------------------------
+# Best not to mess with these unless you know what you're doing!
+
+permalink: 'pretty'
+sass:
+  style: compressed
+exclude:
+  - Gemfile*
+  - Rakefile
+  - vendor
+  - spec
+  - README.md
+incremental: true
+webrick:
+  headers:
+    'Access-Control-Allow-Origin': '*'
+kramdown:
+ auto_ids:       true
+ footnote_nr:    1
+ entity_output:  as_char
+ footnote_backlink: "&#x21a9;&#xfe0e;"
+ toc_levels:     1..6
+ smart_quotes:   lsquo,rsquo,ldquo,rdquo
+ enable_coderay: false
+
 ##########
 # COLLECTION SETTINGS
 #
@@ -37,6 +65,16 @@ author: CollectionBuilder
 metadata: huxtable
 objects: https://huxpdfs.s3.us-west-2.amazonaws.com/
 
+collections:
+  huxtable:
+    output: true
+  qatar: # name of collection
+    output: true # makes sure pages are output as html files
+    layout: 'hux_item' # the layout for the pages to use
+    metadata:
+      source: 'huxtable.csv' # path to the metadata file within `_data`
+    #images:
+     # source: 'raw_images/qatar' # path to the directory of images within `_data`
 
 ##########
 # GOOGLE SERVICES [optional!]
