@@ -1,8 +1,5 @@
 field,field_name,display_name,browse_link,external_link
 objectid,id,id,
-title,title,Title,
-creator,,Creator,
-date,,Date Created,
 description,,Description,
 subject,,Subjects,true
 location,,Location
@@ -10,9 +7,8 @@ latitude,,Latitude
 longitude,,Longitude
 source,source,Source
 identifier,,Source Identifier,,
-type,type,Type,
 format,format,Format,
 rights,,Rights,
 rightsstatement,,Rights Statement,,true
 text,text,Text,
-fulldate,,Date,												
+fulldate,Date,Date,												
