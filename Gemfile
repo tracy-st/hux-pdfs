@@ -1,7 +1,6 @@
 ruby "2.7.2"
 
 source "https://rubygems.org"
-gemspec
 
 # gem "github-pages"
 #
@@ -17,9 +16,7 @@ gem "jekyll"
 
 gem "webrick", "~> 1.7"
 
-gem 'omniauth-auth0', '~> 3.0'
-gem 'omniauth-rails_csrf_protection', '~> 1.0' # prevents forged authentication requests
+#gem 'omniauth-auth0', '~> 3.0'
+#gem 'omniauth-rails_csrf_protection', '~> 1.0' # prevents forged authentication requests
 
 gem 'jekyll-auth', '~> 2.1', '>= 2.1.2'
-
-#gem 'rack-wwwhisper', '~> 1.0'

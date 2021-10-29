@@ -2,3 +2,9 @@
     Put your custom SCSS here! 
     This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
 */
+
+.text-field, .text-value {display: none}
+
+.text-dark, .card-title  {font-size:1.2em}
+
+img.w50 {width:10px;max-height:10px}
