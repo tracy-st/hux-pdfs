@@ -1,3 +1,6 @@
-require "rack/jekyll"
+#require "rack/jekyll"
 
-run Rack::Jekyll.new
+#run Rack::Jekyll.new
+
+require 'rack/wwwhisper'
+use Rack::WWWhisper
