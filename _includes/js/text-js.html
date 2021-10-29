@@ -34,21 +34,7 @@
             itemImage= '<div id="text"></div>';
             itemLink= '';
         }
-
-        {% if stubs contains "timeline" %}
-        /* add link to view on timeline */
-        if (record.date) {
-            var itemYear;
-            if (record.date.includes('-')) {
-                itemYear = record.date.split('-')[0];
-            } else if (record.date.includes('/')) {
-                itemYear = record.date.split('/').pop();
-            } else {
-                itemYear = record.date;
-            }
-            itemLink += '<a href="{{ "/timeline.html" | relative_url }}#' + itemYear + '" class="ml-2 btn btn-outline-dark">View on Timeline</a>';
-        }
-        {%- endif -%}
+        
         {% if stubs contains "map" %}
         /* add link to view on map */ 
         if (record.latitude && record.longitude) {
