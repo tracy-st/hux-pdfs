@@ -1,3 +1,5 @@
+ruby "2.7.2"
+
 source "https://rubygems.org"
 
 # gem "github-pages"
@@ -14,6 +16,6 @@ gem "jekyll"
 
 gem "webrick", "~> 1.7"
 
-gem "rack-jekyll"
+#gem "rack-jekyll"
 
 #gem 'rack-wwwhisper', '~> 1.0'
