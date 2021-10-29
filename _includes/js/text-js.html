@@ -34,7 +34,7 @@
             itemImage= '<div id="text"></div>';
             itemLink= '';
         }
-        
+
         {% if stubs contains "map" %}
         /* add link to view on map */ 
         if (record.latitude && record.longitude) {
@@ -72,6 +72,7 @@
         {% endif %}{% endfor %}
         fields += '</dl>';
         document.getElementById("item-metadata").innerHTML = fields;
+        
 
         {% if site.data.theme.browse-buttons == true %}
         /* add prev/next nav */
