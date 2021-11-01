@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg {{ site.data.theme.navbar-color | default: 'navbar-dark' }} {{ site.data.theme.navbar-background | default: 'bg-dark' }}">
+<nav class="navbar navbar-expand-lg {{ site.data.theme.navbar-color | default: 'navbar-dark' }} delft">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -6,11 +6,20 @@
 
         <div class="collapse navbar-collapse" id="page-nav">
             <ul class="navbar-nav mr-auto">
-
+                <li class="nav-item {% if page.url == nav.stub %}active{% endif %}">
+                    <a class="nav-link delft " href="/">Overview</a>
+                </li>
+                <li class="nav-item {% if page.url == nav.stub %}active{% endif %}">
+                    <a class="nav-link delft " href="/huxtable/">Huxtable</a>
+                </li>
+                <li class="nav-item {% if page.url == nav.stub %}active{% endif %}">
+                    <a class="nav-link delft " href="/gdr/">GDR</a>
+                </li>
+                <li class="nav-item {% if page.url == nav.stub %}active{% endif %}">
+                    <a class="nav-link delft " href="/caa/">CAA</a>
+                </li>
             </ul>
-            
-            {% include nav-search-lunr.html %}
-            
+
         </div>
     </div>
 </nav>
