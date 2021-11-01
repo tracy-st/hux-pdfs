@@ -3,4 +3,5 @@ title: Map
 layout: about
 permalink: /dan_map/
 ---
-Test page?
+
+[Link to map](http://adalouisehuxtable.herokuapp.com/).
