@@ -14,3 +14,6 @@ vendor/
 
 # temporarily ignore gemfile.lock
 #Gemfile.lock
+
+# Local Netlify folder
+.netlify
