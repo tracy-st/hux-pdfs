@@ -1,6 +1,6 @@
 ---
 title: Map
 layout: about
-permalink: /dan_map
+permalink: /dan_map/
 ---
-Test
+Test page?
