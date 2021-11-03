@@ -5,4 +5,4 @@ permalink: /test/
 ---
 TEST
 
-![Album cover](s3://ptgigord/1328_000.jpg)
+![Album cover](https://ptgigord.s3.us-west-2.amazonaws.com/1328_000.jpg)
